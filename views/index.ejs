@@ -36,7 +36,10 @@
             <div class="task w-72 px-3 py-4 rounded-md bg-zinc-800">
               <h1 class="text-white text-3xl tracking-tighter"><%= val %></h1>
               <p class="text-zinc-400 mt-2"><%= val.details %></p>
-              <a class="text-blue-500 inline-block mt-3" href="#">Read more</a>
+              <div class="flex w-full justify-between item-center mt-3">
+                <a class="text-blue-500 inline-block" href="/file/<%= val %>">Read more</a>
+                <a class="text-zinc-600" href="/edit/<%= val %>">Edit Filename</a>
+              </div>
             </div>
           <% }); %>
         <% } else { %>
